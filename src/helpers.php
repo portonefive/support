@@ -4,14 +4,6 @@ use PragmaRX\Support\Environment;
 use PragmaRX\Support\Debug\Dumper;
 use Illuminate\Foundation\Application as Laravel;
 
-if ( ! function_exists('env'))
-{
-	function env($variable, $default = '#default#')
-	{
-		return Environment::get($variable, $default);
-	}
-}
-
 if ( ! function_exists('getExecutablePath'))
 {
 	function getExecutablePath($cmd)
